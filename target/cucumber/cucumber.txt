@@ -1,0 +1,16 @@
+
+@smoke @onewaytrip
+Scenario: Search One Way Trip Flight                                   [90m# src/main/java/features/flightSearch.feature:5[0m
+  [32mGiven [0m[32mI am on MMT flight booking search page[0m                         [90m# com.serenity.stepDefinitions.CommonStepDefination.i_am_on_mmt_flight_booking_search_page()[0m
+  [32mWhen [0m[32mI perform one way search[0m                                        [90m# com.serenity.stepDefinitions.FlightSearchStepDefinition.i_perform_one_way_search(io.cucumber.datatable.DataTable)[0m
+    | From | To     |
+    | Pune | Mumbai |
+  [32mThen [0m[32mSearch Result should display available flights for one way trip[0m [90m# com.serenity.stepDefinitions.FlightSearchStepDefinition.search_result_should_display_available_flights_for_one_way_trip()[0m
+
+@smoke @roundtrip
+Scenario: Search One Way Trip Flight                                 [90m# src/main/java/features/flightSearch.feature:13[0m
+  [32mGiven [0m[32mI am on MMT flight booking search page[0m                       [90m# com.serenity.stepDefinitions.CommonStepDefination.i_am_on_mmt_flight_booking_search_page()[0m
+  [32mWhen [0m[32mI perform round trip search[0m                                   [90m# com.serenity.stepDefinitions.FlightSearchStepDefinition.i_perform_round_trip_search(io.cucumber.datatable.DataTable)[0m
+    | From | To     |
+    | Pune | Mumbai |
+  [32mThen [0m[32mSearch Result should display available flights for round trip[0m [90m# com.serenity.stepDefinitions.FlightSearchStepDefinition.search_result_should_display_available_flights_for_round_trip()[0m
